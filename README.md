@@ -86,4 +86,4 @@ docker compose up --build
 | Marcelo | [@MarceloDebug](https://github.com/MarceloDebug) | Mobile Frontend (Kotlin) |
 | Paulo | [@EasterEggo](https://github.com/EasterEggo) | Backend (Express.js) |
 | Fhelipe | [@FhelipeAM](https://github.com/FhelipeAM) | Database (PostgreSQL) |
-| Henry | — | UI/UX Design (Figma) |
+| Henry | [@HenryST48](https://github.com/HenryST48)  | UI/UX Design (Figma) |
