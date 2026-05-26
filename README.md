@@ -8,11 +8,11 @@
 
 ---
 
-## 🗺️ Project Roadmap
+##  Project Roadmap
 
 - [x] **Repository Setup**
-- [ ] **Documentation**
-- [ ] **Database Modeling**
+- [x] **Documentation**
+- [ ] **Database Script**
 - [ ] **Backend API**
 - [ ] **User Interface**
 - [ ] **Authentication & Authorization**
@@ -20,7 +20,7 @@
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Mobile
 - **Language:** Kotlin
@@ -39,11 +39,10 @@
 ### DevOps
 - **Containerization:** Docker & Docker Compose
 - **CI/CD:** GitHub Actions
-- **Version Control:** Git & GitHub
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 ### Prerequisites
 - Android Studio installed
@@ -77,7 +76,7 @@ docker compose up --build
 
 ---
 
-## 👥 Team
+##  Team
 
 | Member | GitHub | Role |
 |---|---|---|
