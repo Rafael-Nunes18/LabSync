@@ -2,15 +2,13 @@
 
 ![Status](https://img.shields.io/badge/Status-In%20Development-yellow)
 ![Kotlin](https://img.shields.io/badge/Kotlin-1.9-7F52FF?logo=kotlin&logoColor=white)
-![Android](https://img.shields.io/badge/Android-Enabled-3DDC84?logo=android&logoColor=white)
-![Express](https://img.shields.io/badge/Backend-Express.js-000000?logo=express&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-4169E1?logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED?logo=docker&logoColor=white)
 
 **LabSync** is a Kotlin application designed to help teachers schedule and manage laboratory reservations, streamlining the process of booking and organizing lab usage within educational institutions.
 
 ---
 
-##  Project Roadmap
+## 🗺️ Project Roadmap
 
 - [x] **Repository Setup**
 - [ ] **Documentation**
@@ -22,7 +20,7 @@
 
 ---
 
-##  Tech Stack
+## 🛠️ Tech Stack
 
 ### Mobile
 - **Language:** Kotlin
@@ -39,22 +37,36 @@
 - **Tool:** Figma
 
 ### DevOps
+- **Containerization:** Docker & Docker Compose
 - **CI/CD:** GitHub Actions
 - **Version Control:** Git & GitHub
 
 ---
 
-##  How to Run
+## 🚀 How to Run
 
 ### Prerequisites
 - Android Studio installed
-- Node.js installed
-- PostgreSQL installed
+- Docker Desktop installed
 - Git installed
 
 ### Clone the repository
 ```bash
 git clone https://github.com/Rafael-Nunes18/LabSync.git
+```
+
+### Configure environment variables
+Create a `.env` file in the root of the project:
+```env
+POSTGRES_USER=your_user
+POSTGRES_PASSWORD=your_password
+POSTGRES_DB=labsync
+PORT=3000
+```
+
+### Start backend and database
+```bash
+docker compose up --build
 ```
 
 ### Open the app in Android Studio
@@ -63,16 +75,9 @@ git clone https://github.com/Rafael-Nunes18/LabSync.git
 3. Navigate to the cloned folder and open it
 4. Connect a physical device or start an **Android Emulator** and click **Run ▶**
 
-### Start the backend
-```bash
-cd backend
-npm install
-npm start
-```
-
 ---
 
-##  Team
+## 👥 Team
 
 | Member | GitHub | Role |
 |---|---|---|
