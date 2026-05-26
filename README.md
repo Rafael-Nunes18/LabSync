@@ -81,8 +81,8 @@ docker compose up --build
 | Member | GitHub | Role |
 |---|---|---|
 | Rafael Toledo Nunes | [@Rafael-Nunes18](https://github.com/Rafael-Nunes18) | DevOps |
-| Pedro | [@PezTeles](https://github.com/PezTeles) | Mobile Frontend (Kotlin) |
-| Marcelo | [@MarceloDebug](https://github.com/MarceloDebug) | Mobile Frontend (Kotlin) |
-| Paulo | [@EasterEggo](https://github.com/EasterEggo) | Backend (Express.js) |
-| Fhelipe | [@FhelipeAM](https://github.com/FhelipeAM) | Database (PostgreSQL) |
-| Henry | [@HenryST48](https://github.com/HenryST48)  | UI/UX Design (Figma) |
+| Pedro Teles Prieto | [@PezTeles](https://github.com/PezTeles) | Mobile Frontend (Kotlin) |
+| Marcelo Soares da Silva | [@MarceloDebug](https://github.com/MarceloDebug) | Mobile Frontend (Kotlin) |
+| Paulo Henrique Santos Borges | [@EasterEggo](https://github.com/EasterEggo) | Backend (Express.js) |
+| Fhelipe Alves Mantovan | [@FhelipeAM](https://github.com/FhelipeAM) | Database (PostgreSQL) |
+| Henry Secassi Tafuri | [@HenryST48](https://github.com/HenryST48)  | UI/UX Design (Figma) |
