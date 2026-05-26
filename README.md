@@ -10,7 +10,7 @@
 
 ---
 
-## 🗺️ Project Roadmap
+##  Project Roadmap
 
 - [x] **Repository Setup**
 - [ ] **Documentation**
@@ -22,7 +22,7 @@
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Mobile
 - **Language:** Kotlin
@@ -44,7 +44,7 @@
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 ### Prerequisites
 - Android Studio installed
@@ -72,7 +72,7 @@ npm start
 
 ---
 
-## 👥 Team
+##  Team
 
 | Member | GitHub | Role |
 |---|---|---|
