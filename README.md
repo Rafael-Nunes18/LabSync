@@ -14,8 +14,9 @@
 - [x] **Documentation**
 - [ ] **Database Script**
 - [ ] **Backend API**
-- [ ] **User Interface**
 - [ ] **Authentication & Authorization**
+- [ ] **Deployment**
+- [ ] **User Interface**
 - [ ] **Unit Testing**
 
 ---
