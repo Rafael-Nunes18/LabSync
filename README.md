@@ -1,10 +1,10 @@
-# LabSync
+# Available
 
 ![Status](https://img.shields.io/badge/Status-In%20Development-yellow)
 ![Kotlin](https://img.shields.io/badge/Kotlin-1.9-7F52FF?logo=kotlin&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED?logo=docker&logoColor=white)
 
-**LabSync** is a Kotlin application designed to help teachers schedule and manage laboratory reservations, streamlining the process of booking and organizing lab usage within educational institutions.
+**Available** is a Kotlin application designed to help teachers schedule and manage laboratory reservations, streamlining the process of booking and organizing lab usage within educational institutions.
 
 ---
 
@@ -52,7 +52,7 @@
 
 ### Clone the repository
 ```bash
-git clone https://github.com/Rafael-Nunes18/LabSync.git
+git clone https://github.com/Rafael-Nunes18/Available.git
 ```
 
 ### Configure environment variables
@@ -60,7 +60,7 @@ Create a `.env` file in the root of the project:
 ```env
 POSTGRES_USER=your_user
 POSTGRES_PASSWORD=your_password
-POSTGRES_DB=labsync
+POSTGRES_DB=Available
 PORT=3000
 ```
 
