@@ -13,10 +13,8 @@
 - [x] **Documentation**
 - [x] **Database Schema (Supabase)**
 - [ ] **Backend API**
-- [ ] **Authentication & Authorization**
-- [ ] **Deployment**
 - [ ] **User Interface**
-- [ ] **Unit Testing**
+- [ ] **Deployment**
 
 ---
 
