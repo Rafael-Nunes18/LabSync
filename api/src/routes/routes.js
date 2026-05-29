@@ -1,9 +1,9 @@
 const router = require('express').Router()
-const { viewFull, delById, insertData, viewId } = require('../controllers/cnpqControllers')
+import { viewFull, delById, insertData, viewId } from '../controllers/cnpqControllers'
 
 router.get('/', viewFull)
 router.post('/', insertData)
 router.get('/:id', viewId)
 router.delete('/:id', delById)
 
-module.exports = router
+export default router
