@@ -3,117 +3,192 @@
 # Android (Kotlin) + Node.js (Express)
 # =====================================================
 
-# =========================
+# =====================================================
 # Android / Kotlin
-# =========================
+# =====================================================
 
 *.iml
 .gradle
 /local.properties
-/.idea
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx/
 
-# APK / AAB
-*.apk
-*.aab
-
-# Generated files
-/bin
-/gen
-/out
-
-# Kotlin
-.kotlin/
-
-# Android Studio
-.navigation/
+.idea/
 .idea/modules.xml
 .idea/workspace.xml
 .idea/navEditor.xml
 .idea/assetWizardSettings.xml
 
+.kotlin/
+
+build/
+.cxx/
+.externalNativeBuild/
+
+captures/
+gen/
+bin/
+out/
+
+# APK / AAB
+*.apk
+*.aab
+
 # IntelliJ
 *.iws
 *.ipr
 
-# =========================
+# Android Navigation
+.navigation/
+
+# =====================================================
 # Node.js / Express
-# =========================
+# =====================================================
 
 node_modules/
+jspm_packages/
+bower_components/
 
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+lerna-debug.log*
+
+# Diagnostic reports
+report.*.json
 
 # Runtime data
-pids
+pids/
 *.pid
 *.seed
 *.pid.lock
 
 # Coverage
 coverage/
+.nyc_output/
+*.lcov
 
-# Dependency directories
-jspm_packages/
+# Instrumented libraries
+lib-cov/
 
-# Optional npm cache
-.npm
-
-# Optional eslint cache
-.eslintcache
-
-# Parcel
-.cache/
-.parcel-cache/
-
-# Next.js / Nuxt.js
-.next/
-.nuxt/
-
-# Build folders
+# Build outputs
 dist/
 build/
+build/Release/
+.output/
+
+# Package archives
+*.tgz
+
+# TypeScript
+*.tsbuildinfo
+
+# Dependency managers
+.pnpm-store/
+
+# Yarn v3+
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.yarn-integrity
+
+# npm
+.npm
 
 # Environment variables
 .env
 .env.*
 !.env.example
 
-# =========================
-# VSCode / Editors
-# =========================
+# =====================================================
+# Frontend / Frameworks
+# =====================================================
+
+# Next.js
+.next/
+
+# Nuxt.js
+.nuxt/
+
+# Gatsby
+.cache/
+
+# VuePress
+.vuepress/dist
+.temp
+
+# Vite
+.vite/
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# VitePress
+**/.vitepress/dist
+**/.vitepress/cache
+
+# SvelteKit
+.svelte-kit/
+
+# Parcel
+.parcel-cache/
+.cache/
+
+# Snowpack
+web_modules/
+
+# Docusaurus
+.docusaurus/
+
+# FuseBox
+.fusebox/
+
+# =====================================================
+# Cloud / Backend Services
+# =====================================================
+
+.serverless/
+.firebase/
+.dynamodb/
+
+# =====================================================
+# Editor / IDE
+# =====================================================
 
 .vscode/
+.vscode-test/
 .history/
 
-# =========================
+# Caches
+.eslintcache
+.stylelintcache
+
+# TernJS
+.tern-port
+
+# Node REPL
+.node_repl_history
+
+# =====================================================
 # OS Files
-# =========================
+# =====================================================
 
-Thumbs.db
 .DS_Store
+Thumbs.db
 
-# =========================
-# Temporary files
-# =========================
+# =====================================================
+# Temporary Files
+# =====================================================
 
 tmp/
 temp/
 
-# =========================
-# Mac/Linux
-# =========================
-
+# Linux / Mac
 *.swp
 *.swo
 *~
