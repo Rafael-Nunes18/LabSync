@@ -1,27 +1,24 @@
 # Available
-
 ![Status](https://img.shields.io/badge/Status-In%20Development-yellow)
 ![Kotlin](https://img.shields.io/badge/Kotlin-1.9-7F52FF?logo=kotlin&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED?logo=docker&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-Enabled-3ECF8E?logo=supabase&logoColor=white)
 
 **Available** is a Kotlin application designed to help teachers schedule and manage laboratory reservations, streamlining the process of booking and organizing lab usage within educational institutions.
 
 ---
 
-##  Project Roadmap
+## Project Roadmap
 
 - [x] **Repository Setup**
 - [x] **Documentation**
-- [ ] **Database Script**
+- [x] **Database Schema (Supabase)**
 - [ ] **Backend API**
-- [ ] **Authentication & Authorization**
-- [ ] **Deployment**
 - [ ] **User Interface**
-- [ ] **Unit Testing**
+- [ ] **Deployment**
 
 ---
 
-##  Tech Stack
+## Tech Stack
 
 ### Mobile
 - **Language:** Kotlin
@@ -33,21 +30,21 @@
 
 ### Database
 - **Database:** PostgreSQL
+- **BaaS:** Supabase
 
 ### Design
 - **Tool:** Figma
 
 ### DevOps
-- **Containerization:** Docker & Docker Compose
 - **CI/CD:** GitHub Actions
 
 ---
 
-##  How to Run
+## How to Run
 
 ### Prerequisites
 - Android Studio installed
-- Docker Desktop installed
+- Node.js installed
 - Git installed
 
 ### Clone the repository
@@ -56,17 +53,23 @@ git clone https://github.com/Rafael-Nunes18/Available.git
 ```
 
 ### Configure environment variables
-Create a `.env` file in the root of the project:
+
+Create a `.env` file inside the `api/` folder:
+
 ```env
-POSTGRES_USER=your_user
-POSTGRES_PASSWORD=your_password
-POSTGRES_DB=Available
+SUPABASE_URL=your_supabase_url
+SUPABASE_KEY=your_supabase_key
 PORT=3000
 ```
 
-### Start backend and database
+> You can find your `SUPABASE_URL` and `SUPABASE_KEY` in your Supabase project settings under **API**.
+
+### Start the backend
+
 ```bash
-docker compose up --build
+cd api
+npm install
+npm start
 ```
 
 ### Open the app in Android Studio
@@ -77,7 +80,7 @@ docker compose up --build
 
 ---
 
-##  Team
+## Team
 
 | Member | GitHub | Role |
 |---|---|---|
@@ -85,5 +88,5 @@ docker compose up --build
 | Pedro Teles Prieto | [@PezTeles](https://github.com/PezTeles) | Mobile Frontend (Kotlin) |
 | Marcelo Soares da Silva | [@MarceloDebug](https://github.com/MarceloDebug) | Mobile Frontend (Kotlin) |
 | Paulo Henrique Santos Borges | [@EasterEggo](https://github.com/EasterEggo) | Backend (Express.js) |
-| Fhelipe Alves Mantovan | [@FhelipeAM](https://github.com/FhelipeAM) | Database (PostgreSQL) |
-| Henry Secassi Tafuri | [@HenryST48](https://github.com/HenryST48)  | UI/UX Design (Figma) |
+| Fhelipe Alves Mantovan | [@FhelipeAM](https://github.com/FhelipeAM) | Database (PostgreSQL/Supabase) |
+| Henry Secassi Tafuri | [@HenryST48](https://github.com/HenryST48) | UI/UX Design (Figma) |
