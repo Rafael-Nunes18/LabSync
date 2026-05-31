@@ -1,13 +1,13 @@
-
+//env
+import dotenv from 'dotenv/config.js'
 //express
 import express from 'express';
-import { json, urlencoded } from 'body-parser';
+import bp from 'body-parser';
 import path from 'path';
 import apiRouter from './routes/apiroutes.js';
 
-//env
-require('dotenv').config({path: __dirname + "/../.env"})
 
+const {json, urlencoded} = bp
 const app = express()
 const port = process.env.PORT
 
