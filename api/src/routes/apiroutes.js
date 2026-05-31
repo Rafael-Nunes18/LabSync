@@ -1,11 +1,11 @@
 import { Router } from 'express'
-import { viewFull, delById, insertData, viewId } from '../controllers/labController.js'
+import { labDeleteById, labInsertData, labViewFull, labViewId } from '../controllers/labController.js'
 
 const apiRouter = Router()
 
-apiRouter.get('/lab', viewFull)
-apiRouter.post('/lab', insertData)
-apiRouter.get('/lab/:id', viewId)
-apiRouter.delete('/lab/:id', delById)
+apiRouter.get('/lab', labViewFull)
+apiRouter.post('/lab', labInsertData)
+apiRouter.get('/lab/:id', labViewId)
+apiRouter.delete('/lab/:id', labDeleteById)
 
 export default apiRouter
