@@ -1,4 +1,5 @@
-import { query as _query } from '../config/db'
+
+import supabase from '../config/db.js'
 export async function viewTable(table, param, value) {
   const tab = table.toString()
   const query = param === undefined ? `SELECT * FROM ${tab}` : `SELECT * FROM ${tab} WHERE ${param.toString()} = ${value.toString()}`

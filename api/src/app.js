@@ -1,28 +1,19 @@
-//env
-require('dotenv').config()
+
 //express
-const express = require('express')
-const bodyParser = require('body-parser')
-const path = require('path');
+import express from 'express';
+import { json, urlencoded } from 'body-parser';
+import path from 'path';
+import apiRouter from './routes/apiroutes.js';
+
+//env
+require('dotenv').config({path: __dirname + "/../.env"})
+
 const app = express()
-const logger = require('./middleware/loggermd')
-app.use(bodyParser.json())
-app.use(
-  bodyParser.urlencoded({
-    extended: true,
-  }),
-);
 const port = process.env.PORT
 
-//routes for cnpq api endpoint
-const cnpq = require('./routes/cnpqRoutes')
-app.use('/v1/cnpq', cnpq)
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public/index.html'));
-});
-app.use(logger)
-app.use(express.static('public'))
+app.use(json())
+app.use(urlencoded({extended: true}));
 
-app.listen(port, () => {
-  console.log(`server running at port ${port}`)
-})
+app.use('/v1/', apiRouter)
+
+app.listen(port, () => {console.log(`server running at port ${port}`)})

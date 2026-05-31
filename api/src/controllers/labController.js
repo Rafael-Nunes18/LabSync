@@ -1,10 +1,10 @@
-const f = require('../utils/cnpqFunctions')
+import { viewTable, insertCnpq, deleteFrom } from '../utils/dbFunctions.js'
 const viewFull = async (req, res) => {
-  f.viewTable('cnpq')
+  viewTable('cnpq')
     .then(result => res.json(result.rows))
 }
 const viewId = async (req, res) => {
-  f.viewTable('cnpq', 'id', req.params.id)
+  viewTable('cnpq', 'id', req.params.id)
     .then((result) => res.json(result.rows[0]))
 }
 const insertData = async (req, res) => {
@@ -13,15 +13,15 @@ const insertData = async (req, res) => {
     res.send("MISSING DATA")
     return console.error("ERROR:MISSING DATA")
   }
-  f.insertCnpq(nome, subarea)
+  insertCnpq(nome, subarea)
     .then((result) => res.json(req.body))
 }
 
 const delById = async (req, res) => {
-  f.deleteFrom('cnpq', req.params.id)
+  deleteFrom('cnpq', req.params.id)
     .then((result) => res.json(result.rowCount === 0 ? "ID not found on database" : `Row with ID ${req.params.id} deleted successfully`))
 }
-module.exports = {
+export default {
   viewFull,
   delById,
   viewId,
