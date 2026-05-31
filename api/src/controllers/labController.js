@@ -1,4 +1,4 @@
-import { viewTable, insertCnpq, deleteFrom } from '../utils/dbFunctions.js'
+import { viewTable, insertTable, deleteFrom, updateTable } from '../utils/dbFunctions.js'
 export const viewFull = async (req, res) => {
   viewTable('cnpq')
     .then(result => res.json(result.rows))
@@ -13,7 +13,7 @@ export const insertData = async (req, res) => {
     res.send("MISSING DATA")
     return console.error("ERROR:MISSING DATA")
   }
-  insertCnpq(nome, subarea)
+  insertTable(nome, subarea)
     .then((result) => res.json(req.body))
 }
 
